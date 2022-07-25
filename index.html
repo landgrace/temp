@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title></title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <script>
+       const queryString = window.location.search;
+       const id = window.location.hash;
+       const urlParams = new URLSearchParams(queryString);
+       const p= urlParams.get('path')
+       var url = "https://gateway.pinata.cloud/ipfs/QmWmCGLQwFP4F1WrPyScgRggb728hEV62XXDrGZ7q69KMY?path="+p+id;
+       window.location.replace(url);
+      </script>
+   </body>
+</html>
